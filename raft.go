@@ -18,6 +18,8 @@ const (
 type Raft struct {
 	mu sync.Mutex
 
+	// 服务器id
+	id int
 	// 服务器当前状态
 	state int
 	// 服务器已知的最新任期
